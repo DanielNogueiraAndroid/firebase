@@ -52,9 +52,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
     }
-
 
     @Override
     protected void onStart() {
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity
         mB1 = (Button) findViewById(R.id.button1);
         mB2 = (Button) findViewById(R.id.button2);
         mTv = (TextView) findViewById(R.id.textView2);
-        mRef = new Firebase("https://fir-test-1-65b7a.firebaseio.com/condition");
+        mRef = new Firebase("https://fir-test-1-65b7a.firebaseio.com/condition2");
 
         mRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -92,7 +90,6 @@ public class MainActivity extends AppCompatActivity
                 //mRef.push();
             }
         });
-
 
     }
 
